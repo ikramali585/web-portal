@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template ,request
+from flask import Flask, render_template ,request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 local_server="TRUE"
@@ -21,6 +21,7 @@ class Coordinates(db.Model):
 def home():
     return render_template('home.html')
 
+
 @app.route('/test', methods = ['GET', 'POST'])
 def Test():
     if(request.method=='POST'):
@@ -30,9 +31,13 @@ def Test():
         print(Longitude, Latitude)
         entry = Coordinates(Latitude=Latitude,Longitude=Longitude)
         db.session.add(entry)
-        db.session.commit() 
+        db.session.commit()
+        return redirect(url_for("result"))
     return render_template("test.html")
 
+@app.route('/result', methods = ['GET', 'POST'])
+def result():
+    return render_template("results.html")
 
 if __name__ == '__main__':
     app.debug = True

@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block body %}
+<div class="bg">
+    <div id="result" class="center">
+        <h3 class="center testHead1">Results</h3>
+        <form class="geo-form center">
+            <div class="form-group center">
+                <label class="label1 center" for="exampleInputEmail1"><strong>Salinity</strong></label>
+                <input type="text" class="form-control inputCenter" id="latitude" aria-describedby="emailHelp"
+                    name="latitude" value="0.2" disabled />
+            </div>
+            <div class="form-group center">
+                <label class="label1 center" for="exampleInputEmail1"><strong>Soil Texture</strong></label>
+                <input type="text" class="form-control inputCenter" id="longitude" aria-describedby="emailHelp"
+                    name="longitude" value="Loam" disabled />
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

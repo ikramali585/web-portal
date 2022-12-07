@@ -1,8 +1,5 @@
 {% extends "base.html" %} {% block body %}
-<header
-  class="HeaderHome"
-  style="background-image: url('{{url_for('static', filename='assets/main.png')}}')"
->
+<header class="HeaderHome" style="background-image: url('{{url_for('static', filename='assets/main.png')}}')">
   <div class="header">
     <h1 class="homeHead1">Welcome to our portal</h1>
     <p style="color: white">
@@ -19,8 +16,7 @@
 <!-- home -->
 <div class="home">
   <p class="block1">
-    <b
-      >Soil, is a mixture of organic matter, minerals, gases, liquids, and
+    <b>Soil, is a mixture of organic matter, minerals, gases, liquids, and
       organisms that together support life. It is a major component of ecosystem
       of the earth.About 45% of soil is made up of minerals, 5% of soil is
       organic matter, 20–30% of soil is water, and 20–30% of soil is air. The
@@ -28,12 +24,9 @@
       the many variables that can cause daily changes in the soil’s
       composition.Soil minerals are divided into three size classes, clay,
       silt,sand and the proportions of these particles make up the soil
-      texture.</b
-    >
+      texture.</b>
   </p>
-  <img
-    src="{{url_for('static',filename='assets/Soil_texture_triangle.png')}}"
-  />
+  <img src="{{url_for('static',filename='assets/Soil_texture_triangle.png')}}" />
   <div id="element1" class="element">
     <h3>Soil Texture</h3>
     <p>
@@ -53,6 +46,7 @@
       sand, 10% clay and %20 silt.
     </p>
   </div>
+
   <div id="element2" class="element">
     <h3>Electrical Conductivity</h3>
     <img id="img1" src="{{url_for('static',filename='assets/table.jpg')}}" />
