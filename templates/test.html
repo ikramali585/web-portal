@@ -2,7 +2,7 @@
 <div class="bg">
   <div id="test" class="center">
     <h3 class="center testHead1">Enter Your Geo-Coordinates</h3>
-    <form class="geo-form center">
+    <form class="geo-form center" action ="/test" method="post">
       <div class="form-group center">
         <label class="label1 center" for="exampleInputEmail1"
           ><strong>Latitude</strong></label
@@ -12,6 +12,7 @@
           class="form-control inputCenter"
           id="latitude"
           aria-describedby="emailHelp"
+          name="latitude"
         />
       </div>
       <div class="form-group center">
@@ -21,8 +22,9 @@
         <input
           type="text"
           class="form-control inputCenter"
-          id="latitude"
+          id="longitude"
           aria-describedby="emailHelp"
+          name="longitude"
         />
       </div>
       <div class="form-group">
