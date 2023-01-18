@@ -1,24 +1,32 @@
 {% extends "base.html" %} {% block body %}
-<div class="bg1">
+<div class="bg1 mycenter">
   <div id="test" class="center">
     <h3 class="center testHead1">Enter Your Geo-Coordinates</h3>
     <form class="geo-form center" action="/result" method="post">
       <div class="form-group center">
         <label class="label1 center" for="exampleInputEmail1"><strong>Latitude</strong></label>
         <input type="text" class="form-control inputCenter" id="latitude" aria-describedby="emailHelp"
-          name="latitude" />
+          name="latitude" required/>
       </div>
       <div class="form-group center">
         <label class="label1 center" for="exampleInputEmail1"><strong>Longtitude</strong></label>
         <input type="text" class="form-control inputCenter" id="longitude" aria-describedby="emailHelp"
-          name="longitude" />
+          name="longitude" required/>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-danger geo-button center">
+        <button type="submit" class="button geo-button center">
           Submit
         </button>
       </div>
+      <div class="button mapButton geo-button">Enter Geo-Coordinates VIA Map</div>
     </form>
+  </div>
+  <div id="map" class="center map">
+  </div>
+  <div class="map">
+    <button type="submit" class="cordButton button geo-button center">
+      Submit
+    </button>
   </div>
 </div>
 {% endblock %}
