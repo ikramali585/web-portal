@@ -142,3 +142,46 @@ footer {
 .button:hover {
   cursor: pointer;
 }
+#ico{
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+#container{
+  display: flex;
+  padding-left: 2%;
+}
+#image1{
+  height: 30vh;
+  width:40vh;
+  margin-top: 8%;
+}
+#texture{
+  margin-right: 6%;
+}
+#container1{
+  display: flex;
+  margin-top: 3%;
+  padding-left: 2%;
+}
+#image2{
+  height: 40vh;
+  width:40vh;
+}
+#texture1{
+  margin-right: 6%;
+}
+.table{
+  margin-top: 6%;
+}
+caption{
+  caption-side: top;
+  color:black
+}
+.table img{
+  height:20vh;
+}
+th, td {
+  padding-left: 5%;
+}

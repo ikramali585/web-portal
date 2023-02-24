@@ -1,0 +1,132 @@
+{% extends "base.html" %} {% block body %}
+
+<div id="container">
+    <div id="texture">
+        <h2>Soil Texture</h2>
+        <p>Since it is concerned with the size of mineral particles, soil texture refers to the 
+        relative percentage of sand, silt, and clay.
+         The inorganic solid phase of the soil is composed primarily of sand, silt, and clay particles. 
+         These particles frequently combine with other soil constituents, most significantly 
+         soil organic matter. Cultural actions do not readily alter the particle size of mineral soil.
+         As a result, it is regarded as a constant aspect and fundamental property of soil.</p>
+    </div>
+    <div>
+        <img id="image1" src="{{url_for('static',filename = 'assets/soil.jpg')}}" alt="soil">
+    </div>
+</div>
+<div id="container1">
+    <div id="texture1">
+        <h2>Classification</h2>
+        <p>The United States Department of Agriculture has twelve main classifications for soil texture.
+            These are sand, loamy sand, sandy loam,loam, silt loam, silt, sandy clay loam, clay loam, 
+            silty clay loam, sandy clay, silty clay, and clay.The proportions of each soil component (sand, silt, and clay)
+            that are present in a soil are used to categorise its texture.The use of a soil texture triangle
+            is connected to determining soil texture. Below is an example of a soil triangle:The triangle's first side represents 
+            the percentage of sand, the second side the percentage of clay, and the third side the percentage of silt. The triangle can be used to classify the 
+            soil texture if the amounts of sand, clay, and silt in the soil sample are known.<br><b>For example,</b> a soil is categorised as a sandy loam if it contains 70% sand and 10% clay. Starting on any side of the soil triangle will get the same results. The physical and chemical characteristics of a soil affect its texture. The amount of water and nutrients that a soil can contain will depend on the size and distribution of its particles. Sandier soils have huge pore spaces 
+            that enable leaching, whereas fine-textured soils typically have a higher capacity for water retention.</p>
+    </div>
+    <div>
+        <img id="image2" src="{{url_for('static',filename = 'assets/triangle.png')}}" alt=" soil triangle">
+    </div>
+</div>
+<table class="table table-bordered">
+    <caption><b>Size of fractions of sand, silt and clay is the basis for classification of Soil Texture.</b></caption>
+    <thead>
+        <tr>
+            <th>Textural Classes</th>
+            <th>Sand</th>
+            <th>Silt</th>
+            <th>Clay</th>
+            <th>Images</th>
+        </tr>
+    </thead>
+    
+    <tr>
+        <td>Sand</td>
+        <td>85-100</td>
+        <td>0-15</td>
+        <td>0-10</td>
+        <td><img src="{{url_for('static', filename = 'assets/sand.jpg')}}" alt="sand"></td>
+    </tr>
+    <tr>
+        <td>Loamy sand</td>
+        <td>70-90</td>
+        <td>0-30</td>
+        <td>0-15</td>
+        <td><img src="{{url_for('static', filename = 'assets/loam_sand.png')}}" alt="loamy sand"></td>
+    </tr>
+    <tr>
+        <td>Sandy loam</td>
+        <td>43-80</td>
+        <td>0-50</td>
+        <td>0-20</td>
+        <td><img src="{{url_for('static', filename = 'assets/sandy_loam.png')}}" alt="sandy loam"></td>
+    </tr>
+    <tr>
+        <td>Loam</td>
+        <td>23-52</td>
+        <td>28-50</td>
+        <td>7-27</td>
+        <td><img src="{{url_for('static', filename = 'assets/loam.png')}}" alt="Loam"></td>
+    </tr>
+    <tr>
+        <td>Silt loam</td>
+        <td>0-50</td>
+        <td>50-88</td>
+        <td>0-27</td>
+        <td><img src="{{url_for('static', filename = 'assets/silt_loam.png')}}" alt="silt loam"></td>
+    </tr>
+    <tr>
+        <td>Silt</td>
+        <td>0-20</td>
+        <td>88-100</td>
+        <td>0-12</td>
+        <td><img src="{{url_for('static', filename = 'assets/silt.png')}}" alt="silt"></td>
+    </tr>
+    <tr>
+        <td>Sandy clay loam</td>
+        <td>45-80</td>
+        <td>0-28</td>
+        <td>20-55</td>
+        <td><img src="{{url_for('static', filename = 'assets/sandy_clay_loam.jpg')}}" alt="sandy clay loam"></td>
+    </tr>
+    <tr>
+        <td>Clay loam</td>
+        <td>20-45</td>
+        <td>15-53</td>
+        <td>27-40</td>
+        <td><img src="{{url_for('static', filename = 'assets/clay_loam.png')}}" alt="clay loam"></td>
+    </tr>
+    <tr>
+        <td>Silty clay loam</td>
+        <td>0-20</td>
+        <td>40-73</td>
+        <td>27-40</td>
+        <td><img src="{{url_for('static', filename = 'assets/silty_clay_loam.png')}}" alt="silty clay loam"></td>
+    </tr>
+    <tr>
+        <td>Sandy clay</td>
+        <td>40-65</td>
+        <td>0-20</td>
+        <td>35-45</td>
+        <td><img src="{{url_for('static', filename = 'assets/sandy_clay.png')}}" alt="sandy clay"></td>
+    </tr>
+    <tr>
+        <td>Silty clay</td>
+        <td>0-20</td>
+        <td>40-60</td>
+        <td>40-60</td>
+        <td><img src="{{url_for('static', filename = 'assets/silty_clay.png')}}" alt="silty clay"></td>
+    </tr>
+    <tr>
+        <td>Clay</td>
+        <td>0-40</td>
+        <td>0-40</td>
+        <td>40-60</td>
+        <td><img src="{{url_for('static', filename = 'assets/clay.png')}}" alt="clay"></td>
+    </tr>
+</table>
+</div>
+
+{% endblock %}

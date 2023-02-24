@@ -39,6 +39,10 @@ def Test():
 def result():
     return render_template("results.html")
 
+@app.route('/soil')
+def soil():
+    return render_template('soil.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
