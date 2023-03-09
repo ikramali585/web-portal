@@ -27,7 +27,7 @@ body {
 
 .bg,
 .bg1 {
-  min-height: 91vh;
+  min-height: 84vh;
   justify-content: center;
   align-items: center;
 }
@@ -37,21 +37,53 @@ body {
   padding: 20px 30px;
 }
 
-#button {
+.button {
   background-color: black;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
   border-radius: 12px;
+  display: inline-block;
+}
+
+.mycenter{
+  text-align: center;
+}
+
+#HomeButton {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 200px;
+}
+
+.mapButton {
+  background-color:darkgreen;
+  color: white;
+  padding: 8px 50px;
+}
+
+.map{
+  display: none;
+}
+
+#map {
+  /* display: none; */
+  overflow: scroll;
+  height: 75vh;
+  width: 215vh;
+  /* backgrond-color: blue; */
 }
 
 .HeaderHome {
-  min-height: 94vh;
+  min-height: 84vh;
 }
 
 .homeHead1 {
@@ -64,13 +96,6 @@ body {
   font-size: 50px;
   text-shadow: 1px 1px 2px black;
 }
-
-.home {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
 .label1 {
   font-size: 25px;
   text-shadow: 1px 1px 2px black;
@@ -78,23 +103,6 @@ body {
 
 .element {
   padding: 0 30px;
-}
-
-#element1 {
-  text-align: left;
-  padding-top: 30px;
-  text-decoration: solid;
-}
-#img1 {
-  float: right;
-  width: 550px;
-  height: 300px;
-}
-
-#element2 {
-  text-align: left;
-  padding-top: 100px;
-  text-decoration: solid;
 }
 
 footer {
@@ -112,7 +120,7 @@ footer {
 
 #test,
 #result {
-  padding-top: 20vh;
+  padding-top: 8vh;
   text-align: center;
   margin-top: 73px;
   color: whitesmoke;
@@ -129,4 +137,51 @@ footer {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+#ico{
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+#container{
+  display: flex;
+  padding-left: 2%;
+}
+#image1{
+  height: 30vh;
+  width:40vh;
+  margin-top: 8%;
+}
+#texture{
+  margin-right: 6%;
+}
+#container1{
+  display: flex;
+  margin-top: 3%;
+  padding-left: 2%;
+}
+#image2{
+  height: 40vh;
+  width:40vh;
+}
+#texture1{
+  margin-right: 6%;
+}
+.table{
+  margin-top: 6%;
+}
+caption{
+  caption-side: top;
+  color:black
+}
+.table img{
+  height:20vh;
+}
+th, td {
+  padding-left: 5%;
 }
