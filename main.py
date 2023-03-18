@@ -19,6 +19,35 @@ def result():
 def soil():
     return render_template('soil.html')
 
+@app.route('/Pakistan')
+def Pakistan():
+    return render_template('pakistan.html')
+
+@app.route('/Punjab')
+def Punjab():
+    return render_template('punjab.html')
+
+@app.route('/Sindh')
+def Sindh():
+    return render_template('sindh.html')
+
+@app.route('/KPK')
+def KPK():
+    return render_template('kpk.html')
+
+@app.route('/Balochistan')
+def Balochistan():
+    return render_template('balochistan.html')
+
+@app.route('/Gilgit')
+def Gilgit():
+    return render_template('gilgit.html')
+
+@app.route('/Kashmir')
+def Kashmir():
+    return render_template('kashmir.html')
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()

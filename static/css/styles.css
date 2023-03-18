@@ -143,10 +143,24 @@ footer {
   cursor: pointer;
 }
 #ico{
-  color: white;
+  color:white;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
+}
+#ico1{
+  color:white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+}
+#ico2{
+  color:white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
 }
 #container{
   display: flex;
