@@ -143,24 +143,10 @@ footer {
   cursor: pointer;
 }
 #ico{
-  color:white;
+  color: white;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
-}
-#ico1{
-  color:white;
-  font-size: larger;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
-}
-#ico2{
-  color:white;
-  font-size: larger;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
 }
 #container{
   display: flex;
@@ -188,12 +174,6 @@ footer {
 }
 .table{
   margin-top: 6%;
-  border:1px solid black;
-  border-collapse: collapse;
-  width:80%;
-  text-align:center;
-  margin-left: auto; 
-  margin-right: auto;
 }
 caption{
   caption-side: top;
@@ -204,10 +184,4 @@ caption{
 }
 th, td {
   padding-left: 5%;
-}
-#ref{
-  padding-top:2%;
-}
-#crops{
-  height:50%;
 }

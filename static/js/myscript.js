@@ -27,6 +27,7 @@ function initMap() {
     document.querySelector("#latitude").value = location.lat();
     infowindow.open(map, marker);
   }
+  //https://youtu.be/bUYYaJoXw9c(to connect form)
 
   $(document).ready(function () {
     let MapDiv = $(".map");
