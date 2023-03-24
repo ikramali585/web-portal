@@ -50,7 +50,7 @@ body {
   display: inline-block;
 }
 
-.mycenter{
+.mycenter {
   text-align: center;
 }
 
@@ -65,12 +65,12 @@ body {
 }
 
 .mapButton {
-  background-color:darkgreen;
+  background-color: darkgreen;
   color: white;
   padding: 8px 50px;
 }
 
-.map{
+.map {
   display: none;
 }
 
@@ -142,72 +142,81 @@ footer {
 .button:hover {
   cursor: pointer;
 }
-#ico{
-  color:white;
+#ico {
+  color: white;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
 }
-#ico1{
-  color:white;
-  font-size: larger;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
-}
-#ico2{
-  color:white;
+#ico1 {
+  color: white;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
   margin-left: 10px;
 }
-#container{
+#ico2 {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+}
+#container {
   display: flex;
   padding-left: 2%;
 }
-#image1{
+#image1 {
   height: 30vh;
-  width:40vh;
+  width: 40vh;
   margin-top: 8%;
 }
-#texture{
+#texture {
   margin-right: 6%;
 }
-#container1{
+#container1 {
   display: flex;
   margin-top: 3%;
   padding-left: 2%;
 }
-#image2{
+#image2 {
   height: 40vh;
-  width:40vh;
+  width: 40vh;
 }
-#texture1{
+#texture1 {
   margin-right: 6%;
 }
-.table{
+.table {
   margin-top: 6%;
-  border:1px solid black;
+  border: 1px solid black;
   border-collapse: collapse;
-  width:80%;
-  text-align:center;
-  margin-left: auto; 
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
   margin-right: auto;
 }
-caption{
+caption {
   caption-side: top;
-  color:black
+  color: black;
 }
-.table img{
-  height:20vh;
+.table img {
+  height: 20vh;
 }
-th, td {
+th,
+td {
   padding-left: 5%;
 }
-#ref{
-  padding-top:2%;
+#ref {
+  padding-top: 2%;
+  text-decoration: none;
+  color: black;
 }
-#crops{
-  height:50%;
+#crops {
+  height: 50%;
+}
+.card {
+  width: 18rem;
+}
+.pointer:hover {
+  cursor: pointer;
 }

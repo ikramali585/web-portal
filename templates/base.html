@@ -1,57 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="{{url_for('static', filename='js/myscript.js')}}"></script>
 
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBif0qhAgGUuyCd3xdvkO4IRv7pcTamwvM&libraries=places&callback=initMap">
-    </script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBif0qhAgGUuyCd3xdvkO4IRv7pcTamwvM&libraries=places&callback=initMap"
+    ></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
-    <link rel='icon' href="{{url_for('static', filename='assets/favicon.ico', type='image/x-icon')}}" />
-    <link  href="https://fonts.googleapis.com/css?family=Roboto:400,100,900">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/styles1.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="{{url_for('static', filename='css/styles.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='assets/favicon.ico', type='image/x-icon')}}"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,900" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/styles1.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Soil Texture and Salinity</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    {% macro card(city, img, redirect) -%}
+    <div class="col-xs-12 col-sm-4 ">
+      <div class="card pointer" onclick="location.href='{{redirect}}'">
+        <img class="img-card" src="{{img}}" alt="{{city}}" />
+        <div class="card-content">
+          <h4 class="card-title">{{ city }}</h4>
+        </div>
+      </div>
+    </div>
+    {%- endmacro %}
+
     <!-- Navigation -->
     <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Soil Texture and Salinity</span>
-        <div>
-            <a id="ico" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a id="ico1" href="/Pakistan"><i class="fa fa-fw fa-tree"></i>Pakistan's Soil</a>
-            <a id="ico2" href="/soil"><i class="fa fa-fw fa-leaf"></i>Soil Texture</a>
-        </div>
-       
-
+      <span class="navbar-brand mb-0 h1">Soil Texture and Salinity</span>
+      <div>
+        <a id="ico" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a id="ico1" href="/Pakistan"
+          ><i class="fa fa-fw fa-tree"></i>Pakistan's Soil</a
+        >
+        <a id="ico2" href="/soil"
+          ><i class="fa fa-fw fa-leaf"></i>Soil Texture</a
+        >
+      </div>
     </nav>
-    {% block body %}
-    {% endblock %}
+    {% block body %} {% endblock %}
 
     <!-- Footer -->
     <footer>
-        <div class="footer">
-            Copyright &copy; Computer Engineers UET 2019 @8 @27 @41
-        </div>
+      <div class="footer">
+        Copyright &copy; Computer Engineers UET 2019 @8 @27 @41
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -6,7 +6,6 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-
 @app.route('/test')
 def Test():
     return render_template("test.html")
@@ -46,6 +45,11 @@ def Gilgit():
 @app.route('/Kashmir')
 def Kashmir():
     return render_template('kashmir.html')
+
+@app.route('/Punjab/Attock')
+def Attock():
+    return render_template('attock.html')
+
 
 
 if __name__ == '__main__':
