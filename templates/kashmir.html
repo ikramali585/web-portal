@@ -1,3 +1,44 @@
 {% extends "base.html" %} {% block body %}
-
+<section class="wrapper">
+  <div class="container-fostrap">
+    <!-- <div>
+      <h1 class="heading">Provinces</h1>
+    </div> -->
+    <div class="content">
+      <div class="container">
+        <div>
+          <h1 class="heading">Muzaffarbad Division</h1>
+        </div>
+        <div class="row">
+          {{card("Muzaffarbad", url_for('static',filename = 'assets/Kashmir/Muzaffarabad.jpg'), '/Kashmir/Muzaffarbad')}}
+          {{card("Hattian Bala", url_for('static',filename = 'assets/Kashmir/Hattian Bala.jpg'), '/Kashmir/Hattian Bala')}}
+          {{card("Neelum", url_for('static',filename = 'assets/Kashmir/Neelum.jpg'), '/Kashmir/Neelum')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Mirpur Division</h1>
+        </div>
+        <div class="row">
+            {{card("Mirpur", url_for('static',filename = 'assets/Kashmir/Mirpur.jpg'), '/Kashmir/Mirpur')}}
+            {{card("Kotli", url_for('static',filename = 'assets/Kashmir/Kotli.jpg'), '/Kashmir/Kotli')}}
+            {{card("Bhimber", url_for('static',filename = 'assets/Kashmir/Bhimber.jpg'), '/Kashmir/Bhimber')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Poonch Division</h1>
+        </div>
+        <div class="row">
+            {{card("Poonch", url_for('static',filename = 'assets/Kashmir/Poonch.jpg'), '/Kashmir/Poonch')}}
+            {{card("Haveli", url_for('static',filename = 'assets/Kashmir/Haveli.jpg'), '/Kashmir/Haveli')}}
+            {{card("Bagh", url_for('static',filename = 'assets/Kashmir/Bagh.jpg'), '/Kashmir/Bagh')}}
+            {{card("Sudhnati", url_for('static',filename = 'assets/Kashmir/Sudhnati.jpg'), '/Kashmir/Sudhnati')}}
+        </div>
+      </div>
+      
+      
+      </div>
+    </div>
+</section>
 {% endblock %}
