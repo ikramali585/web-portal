@@ -207,6 +207,8 @@ th, td {
 }
 #ref{
   padding-top:2%;
+  text-decoration: none;
+  color:black;
 }
 #crops{
   height:50%;
