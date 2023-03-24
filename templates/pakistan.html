@@ -7,89 +7,17 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card"  href="/Punjab">
-                    <img src="{{url_for('static',filename = 'assets/Punjab.jpg')}}" alt="Punjab">
-                </a>
-              <div class="card-content">
-                <h4 class="card-title">
-                  <a href="/Punjab"> Punjab </a>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-              <a class="img-card"  href="/Sindh">
-                    <img src="{{url_for('static',filename = 'assets/Sindh.jpg')}}" alt="Sindh">
-                </a>
-              <div class="card-content">
-                <h4 class="card-title">
-                  <a href="/Sindh"> Sindh
-                  </a>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-              <a class="img-card"  href="/Balochistan">
-                    <img src="{{url_for('static',filename = 'assets/balochistan.jpg')}}" alt="Balochistan">
-                </a>
-              <div class="card-content">
-                <h4 class="card-title">
-                  <a href="/Balochistan">Balochistan</a>
-                </h4>
-              </div>
-            </div>
-          </div>
+          {{card("Punjab", url_for('static',filename = 'assets/Punjab.jpg'), '/Punjab')}}
+          {{card("Sindh", url_for('static',filename = 'assets/Sindh.jpg'), '/Sindh')}} 
+          {{card("Balochistan", url_for('static',filename = 'assets/Balochistan.jpg'), '/Balochistan')}}
+        </div>
+        <div class="row">
+          {{card("KPK", url_for('static',filename = 'assets/Khyber.jpg'), '/KPK')}} 
+          {{card("Gilgit Baltistan", url_for('static',filename = 'assets/Gilgit.jpg'), '/Gilgit')}}
+          {{card("Azad Kashmir", url_for('static',filename = 'assets/Azad_Kashmir.jpg'), '/Kashmir')}}
         </div>
       </div>
     </div>
-    <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
-              <div class="card">
-                <a class="img-card"  href="/KPK">
-                    <img src="{{url_for('static',filename = 'assets/Khyber.jpg')}}" alt="Khyber">
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/KPK">Khyber Pakhtunkhwa</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <div class="card">
-                <a class="img-card"  href="/Gilgit">
-                <img src="{{url_for('static',filename = 'assets/gilgit.jpg')}}" alt="Gilgit">
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/Gilgit">Gilgit Balistan</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <div class="card">
-                <a class="img-card"  href="/Kashmir">
-                <img  src="{{url_for('static',filename = 'assets/Azad_Kashmir.jpg')}}" alt="Azad_Kashmir">
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/Kashmir">Azad Jammu Kashmir</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
   </div>
 </section>
-
 {% endblock %}
