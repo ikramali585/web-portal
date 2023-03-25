@@ -1,3 +1,90 @@
 {% extends "base.html" %} {% block body %}
+<section class="wrapper">
+  <div class="container-fostrap">
+    <!-- <div>
+      <h1 class="heading">Provinces</h1>
+    </div> -->
+    <div class="content">
+      <div class="container">
+        <div>
+          <h1 class="heading">Banbhor Division</h1>
+        </div>
+        <div class="row">
+          {{card("Badin", url_for('static',filename = 'assets/Sindh/Badin.jpg'), '/Sindh/Badin')}}
+          {{card("Sujawal", url_for('static',filename = 'assets/Sindh/Sujawal.jpg'), '/Sindh/Sujawal')}}
+          {{card("Thatta", url_for('static',filename = 'assets/Sindh/Thatta.jpg'), '/Sindh/Thatta')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Hyderabad Division</h1>
+        </div>
+        <div class="row">
+          {{card("Dadu", url_for('static',filename = 'assets/Sindh/Dadu.jpg'), '/Sindh/Dadu')}}
+          {{card("Hyderabad", url_for('static',filename = 'assets/Sindh/Hyderabad.jpg'), '/Sindh/Hyderabad')}}
+          {{card("Jamshoro", url_for('static',filename = 'assets/Sindh/Jamshoro.jpg'), '/Sindh/Jamshoro')}}
+          {{card("Matiari", url_for('static',filename = 'assets/Sindh/Matiari.jpg'), '/Sindh/Matiari')}}
+          {{card("Tando Allah Yar", url_for('static',filename = 'assets/Sindh/Tando Allah Yar.jpg'), '/Sindh/Tando Allah yar')}}
+          {{card("Tando Muhammad Khan", url_for('static',filename = 'assets/Sindh/Tando Muhammad Khan.jpg'), '/Sindh/Tando Muhammad Khan')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Sukkar Division</h1>
+        </div>
+        <div class="row">
+          {{card("Ghotki", url_for('static',filename = 'assets/Sindh/Ghotki.jpg'), '/Sindh/Ghotki')}}
+          {{card("Khairpur", url_for('static',filename = 'assets/Sindh/Khairpur.jpg'), '/Sindh/Khairpur')}}
+          {{card("Sukkur", url_for('static',filename = 'assets/Sindh/Sukkur.jpg'), '/Sindh/Sukkur')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Larkana Division</h1>
+        </div>
+        <div class="row">
+          {{card("Jacobabad", url_for('static',filename = 'assets/Sindh/Jacobabad.jpg'), '/Sindh/Jacobabad')}}
+          {{card("Kashmore", url_for('static',filename = 'assets/Sindh/Kashmore.jpg'), '/Sindh/Kashmore')}}
+          {{card("Larkana", url_for('static',filename = 'assets/Sindh/Larkana.jpg'), '/Sindh/Larkana')}}
+          {{card("Kamber Shahdadkot", url_for('static',filename = 'assets/Sindh/Kamber Shahdadkot.jpg'), '/Sindh/Kamber Shahdadkot')}}
+          {{card("Shaikarpur", url_for('static',filename = 'assets/Sindh/Shikarpur.jpg'), '/Sindh/Shaikarpur')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Karachi Division</h1>
+        </div>
+        <div class="row">
+          {{card("Karachi", url_for('static',filename = 'assets/Sindh/Karachi.jpg'), '/Sindh/Karachi')}}
+          {{card("Korangi", url_for('static',filename = 'assets/Sindh/Korangi.jpg'), '/Sindh/Korangi')}}
+          {{card("Malir", url_for('static',filename = 'assets/Sindh/Malir.jpg'), '/Sindh/Malir')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Mirpur Khas Division</h1>
+        </div>
+        <div class="row">
+          {{card("Mirpur Khas", url_for('static',filename = 'assets/Sindh/Mirpur Khas.jpg'), '/Sindh/Mirpur Khas')}}
+          {{card("Sanghar", url_for('static',filename = 'assets/Sindh/Sanghar.jpg'), '/Sindh/Sanghar')}}
+          {{card("Tharparkar", url_for('static',filename = 'assets/Sindh/Tharparkar.jpg'), '/Sindh/Tharparkar')}}
+          {{card("Umerkot", url_for('static',filename = 'assets/Sindh/Umerkot.jpg'), '/Sindh/Umerkot')}}
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h1 class="heading">Shaheed Benazirabad Division</h1>
+        </div>
+        <div class="row">
+          {{card("Shaheed Benazirabad", url_for('static',filename = 'assets/Sindh/Shaheed Benazirabad.jpg'), '/Sindh/Shaheed Benazirabad')}}
+          {{card("Naushahro Feroze", url_for('static',filename = 'assets/Sindh/Naushahro Feroze.jpg'), '/Sindh/Naushahro Feroze')}}
+        </div>
+      </div>
 
+
+
+
+      </div>
+    </div>
+</section>
 {% endblock %}
