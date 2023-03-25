@@ -1,3 +1,110 @@
 {% extends "base.html" %} {% block body %}
+<section class="wrapper">
+  <div class="container-fostrap">
+    <!-- <div>
+      <h1 class="heading">Provinces</h1>
+    </div> -->
+    <div class="content">
+      <div class="container">
+        <div>
+          <h1 class="heading">Quetta Division</h1>
+        </div>
+        <div class="row">
+          {{card("Quetta", url_for('static',filename = 'assets/Balochistan/Quetta.jpg'), '/Balochistan/Quetta')}}
+          {{card("Pishin", url_for('static',filename = 'assets/Balochistan/Pishin.jpg'), '/Balochistan/Pishin')}}
+          {{card("Killa Abdullah", url_for('static',filename = 'assets/Balochistan/Killa Abdullah.jpg'), '/Balochistan/Killa Abdullah')}}
+          {{card("Chaman", url_for('static',filename = 'assets/Balochistan/Chaman.jpg'), '/Balochistan/Chaman')}}
+          {{card("Karezat", url_for('static',filename = 'assets/Balochistan/Karezat.jpg'), '/Balochistan/Karezat')}}
+        </div>
+      </div>
+        <div class="container">
+          <div>
+            <h1 class="heading">Zhob Division</h1>
+          </div>
+          <div class="row">
+            {{card("Zhob", url_for('static',filename = 'assets/Balochistan/Zhob.jpg'), '/Balochistan/Zhob')}}
+            {{card("Killa Saifullah", url_for('static',filename = 'assets/Balochistan/Killa Saifullah.jpg'), '/Balochistan/Killa Saifullah')}}
+            {{card("Sherani", url_for('static',filename = 'assets/Balochistan/Sherani.jpg'), '/Balochistan/Sherani')}}
+          </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Loralai Division</h1>
+            </div>
+            <div class="row">
+            {{card("Loralai", url_for('static',filename = 'assets/Balochistan/Loralai.jpg'), '/Balochistan/Loralai')}}
+            {{card("Musakhel", url_for('static',filename = 'assets/Balochistan/Musakhel.jpg'), '/Balochistan/Musakhel')}}
+            {{card("Barkhan", url_for('static',filename = 'assets/Balochistan/Barkhan.jpg'), '/Balochistan/Barkhan')}}
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Kalat Division</h1>
+            </div>
+            <div class="row">
+            {{card("Kalat", url_for('static',filename = 'assets/Balochistan/Kalat.jpg'), '/Balochistan/Kalat')}}
+            {{card("Khuzdar", url_for('static',filename = 'assets/Balochistan/Khuzdar.jpg'), '/Balochistan/Khuzdar')}}
+            {{card("Awaran", url_for('static',filename = 'assets/Balochistan/Awaran.jpg'), '/Balochistan/Awaran')}}
+            {{card("Lasbela", url_for('static',filename = 'assets/Balochistan/Lasbela.jpg'), '/Balochistan/Lasbela')}}
+            {{card("Hub", url_for('static',filename = 'assets/Balochistan/hub.jpg'), '/Balochistan/Hub')}}
+            {{card("Mustung", url_for('static',filename = 'assets/Balochistan/Mustung.jpg'), '/Balochistan/Mustung')}}
+            {{card("Surab", url_for('static',filename = 'assets/Balochistan/Surab.jpg'), '/Balochistan/Surab')}}
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Sibi Division</h1>
+            </div>
+            <div class="row">
+            {{card("Sibi", url_for('static',filename = 'assets/Balochistan/Sibi.jpg'), '/Balochistan/Sibi')}}
+            {{card("Kohlu", url_for('static',filename = 'assets/Balochistan/Kohlu.jpg'), '/Balochistan/Kohlu')}}
+            {{card("Dera Bugti", url_for('static',filename = 'assets/Balochistan/Dera Bugti.jpg'), '/Balochistan/Dera Bugti')}}
+            {{card("Ziarat", url_for('static',filename = 'assets/Balochistan/Ziarat.jpg'), '/Balochistan/Ziarat')}}
+            {{card("Harnai", url_for('static',filename = 'assets/Balochistan/Harnai.jpg'), '/Balochistan/Harnai')}}
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Nasirabad Division</h1>
+            </div>
+            <div class="row">
+            {{card("Nasirabad", url_for('static',filename = 'assets/Balochistan/Nasirabad.jpg'), '/Balochistan/Nasirabad')}}
+            {{card("Jhal magsi", url_for('static',filename = 'assets/Balochistan/Jhal Magsi.jpg'), '/Balochistan/Jhal Magsi')}}
+            {{card("Kachhi", url_for('static',filename = 'assets/Balochistan/Kacchi.jpg'), '/Balochistan/Kachhi')}}
+            {{card("Jafarabad", url_for('static',filename = 'assets/Balochistan/Jafarabad.jpg'), '/Balochistan/Jafarabad')}}
+            {{card("Sohbatpur", url_for('static',filename = 'assets/Balochistan/Sohbatpur.jpg'), '/Balochistan/Sohbatpur')}}
+            {{card("Usta Muhammad", url_for('static',filename = 'assets/Balochistan/Usta Muhammad.jpg'), '/Balochistan/Usta Muhammad')}}
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Makran Division</h1>
+            </div>
+            <div class="row">
+            {{card("Kech", url_for('static',filename = 'assets/Balochistan/Kech.jpg'), '/Balochistan/Kech')}}
+            {{card("Gwadar", url_for('static',filename = 'assets/Balochistan/Gwadar.jpg'), '/Balochistan/Gwadar')}}
+            {{card("Punjpur", url_for('static',filename = 'assets/Balochistan/Punjpur.jpg'), '/Balochistan/Punjpur')}}
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <h1 class="heading">Rakhshan Division</h1>
+            </div>
+            <div class="row">
+            {{card("Kharan", url_for('static',filename = 'assets/Balochistan/Kharan.jpg'), '/Balochistan/Kharan')}}
+            {{card("Chagai", url_for('static',filename = 'assets/Balochistan/Chagai.jpg'), '/Balochistan/Chagai')}}
+            {{card("Nushki", url_for('static',filename = 'assets/Balochistan/Nushki.jpg'), '/Balochistan/Nushki')}}
+            {{card("Washuk", url_for('static',filename = 'assets/Balochistan/Washuk.jpg'), '/Balochistan/Washuk')}}
+            </div>
+        </div>
+      
+      
+      
 
+
+
+
+      </div>
+    </div>
+</section>
 {% endblock %}
