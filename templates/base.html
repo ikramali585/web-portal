@@ -50,12 +50,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!--QADIR-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Soil Texture and Salinity</title>
   </head>
 
   <body>
     {% macro card(city, img, redirect) -%}
-    <div class="col-xs-12 col-sm-4 ">
+    <div class="col-xs-12 col-sm-4">
       <div class="card pointer" onclick="location.href='{{redirect}}'">
         <img class="img-card" src="{{img}}" alt="{{city}}" />
         <div class="card-content">
@@ -63,22 +75,79 @@
         </div>
       </div>
     </div>
+    {%- endmacro %} {% macro table(district, cordinate1, cordinate2, texture,
+    crop, references) -%}
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th rowspan="2">District</th>
+          <th colspan="2">Geo-Cordinates</th>
+          <th rowspan="2">Soil Texture</th>
+          <th rowspan="2">Crops</th>
+          <th rowspan="2">References</th>
+        </tr>
+        <tr>
+          <th>Latitude</th>
+          <th>Longitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ district }}</td>
+          <td>{{ cordinate1 }}</td>
+          <td>{{ cordinate2 }}</td>
+          <td>{{ texture }}</td>
+          <td>{{ crop }}</td>
+          <td>{{ references }}</td>
+        </tr>
+      </tbody>
+    </table>
     {%- endmacro %}
-
     <!-- Navigation -->
     <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand mb-0 h1">Soil Texture and Salinity</span>
-      <div>
+      <div><button class="btn bg-dark btn-sm" type="button">
+
         <a id="ico" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a id="ico1" href="/Pakistan"
-          ><i class="fa fa-fw fa-tree"></i>Pakistan's Soil</a
-        >
+      </button>
+        <!-- Qadir koshish -->
+        <div class="btn-group pl-0">
+          <button class="btn bg-dark btn-sm" type="button">
+            <a id="ico1" href="/Pakistan">
+              <i class="fa fa-fw fa-tree"></i>
+              Pakistan Soil
+            </a>
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm bg-dark dropdown-toggle dropdown-toggle-split white"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          </button>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item white" href="/Punjab">Punjab</a></li>
+            <li><a class="dropdown-item white" href="/Sindh">Sindh</a></li>
+            <li>
+              <a class="dropdown-item white" href="/Balochistan">Balochistan</a>
+            </li>
+            <li><a class="dropdown-item white" href="/KPK">KPK</a></li>
+            <li>
+              <a class="dropdown-item white" href="/Gilgit">Gilgit Baltistan</a>
+            </li>
+            <li>
+              <a class="dropdown-item white" href="/Kashmir">Azad Kashmir</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn bg-dark btn-sm" type="button">
         <a id="ico2" href="/soil"
           ><i class="fa fa-fw fa-leaf"></i>Soil Texture</a
-        >
+        ></button>
       </div>
     </nav>
-    {% block body %} {% endblock %}
+
+      {% block body %} {% endblock %}
 
     <!-- Footer -->
     <footer>

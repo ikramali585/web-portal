@@ -153,14 +153,18 @@ footer {
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 #ico2 {
   color: white;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+}
+.nav-btn{
+  background-color: #343a40;
+  border-radius: 0;
 }
 #container {
   display: flex;
@@ -219,4 +223,13 @@ td {
 }
 .pointer:hover {
   cursor: pointer;
+}
+.inline{
+  display: inline-block;
+}
+.white{
+  color: white;
+}
+.bgGrey{
+  background-color: #838383;
 }
