@@ -82,6 +82,19 @@ body {
   /* backgrond-color: blue; */
 }
 
+.imgMap{
+  text-align: center;
+  margin: 2% auto;
+  height: 30vh;
+  width: 40vw;
+
+}
+.imgMap img{
+  height: 30vh;
+  width: 40vw;
+  border-radius: 10%;
+}
+
 .HeaderHome {
   min-height: 84vh;
 }
@@ -198,6 +211,9 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+#cityTable{
+  margin-top: 0;
 }
 caption {
   caption-side: top;
