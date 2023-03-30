@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="imgMap">
+    <img src="../../static/assets/{{mapImg}}" alt={{city}} srcset="">
+</div>
+
+{{ table(city,lat,long,soil,crop,reference) }}
+
+{% endblock %}

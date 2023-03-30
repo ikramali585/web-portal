@@ -75,9 +75,9 @@
         </div>
       </div>
     </div>
-    {%- endmacro %} {% macro table(district, cordinate1, cordinate2, texture,
-    crop, references) -%}
-    <table class="table table-bordered">
+    {%- endmacro %} 
+    {% macro table(district, cordinate1, cordinate2, texture, crop, references) -%}
+    <table class="table table-bordered" id="cityTable">
       <thead>
         <tr>
           <th rowspan="2">District</th>
@@ -113,7 +113,7 @@
         <!-- Qadir koshish -->
         <div class="btn-group pl-0">
           <button class="btn bg-dark btn-sm" type="button">
-            <a id="ico1" href="/Pakistan">
+            <a id="ico1" href="/soil/Pakistan">
               <i class="fa fa-fw fa-tree"></i>
               Pakistan Soil
             </a>
