@@ -84,12 +84,6 @@ def test():
     else:
         return render_template("test.html")
 
-
-# @app.route('/result', methods=['GET', 'POST'])
-# def result():
-#     return render_template("results.html")
-
-
 @app.route('/soil')
 def soil():
     return render_template('soil.html')
