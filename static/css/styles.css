@@ -85,12 +85,13 @@ body {
 .imgMap{
   text-align: center;
   margin: 2% auto;
-  height: 30vh;
+  height: 45vh;
   width: 40vw;
-
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
 }
 .imgMap img{
-  height: 30vh;
+  height: 45vh;
   width: 40vw;
   border-radius: 10%;
 }
