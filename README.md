@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### GET /soil-data
 
-Retrieve soil texture and electrical conductivity based on geographical coordinates.
+There are separate pages for the soil information of different regions. You may find it in right corner of the page
 
 
 ## Contributing
